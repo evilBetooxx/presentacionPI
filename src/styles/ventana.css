@@ -1,0 +1,249 @@
+.ventana{
+  overflow-y: scroll;
+  margin: 50px;
+  background-color: rgba(1, 56, 165, 0.119);
+  max-height: 420px;
+  min-width: 850px;
+  border-radius: 20px;
+  background-color: aliceblue;
+  scroll-behavior: smooth;
+}
+
+.ventana::-webkit-scrollbar{
+  display: none;
+}
+
+
+
+.v-navegacion{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  height: 50px;
+  color: rgb(12, 16, 49);
+  font-weight: 600;
+  background: linear-gradient(to right, rgb(255, 255, 255),rgba(236, 236, 236, 0.47),rgba(236, 236, 236, 0.421)) 100%;
+  font-size: 13px;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.226);
+  
+}
+
+
+.about{
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  
+}
+
+.about a {
+  text-decoration: none;
+  color: rgb(1, 23, 101);
+}
+
+.auth{
+  display: flex;
+  gap: 20px;
+} 
+
+
+.bienvenida{
+  background-color: rgb(237, 244, 251);
+  font-weight: 700;
+  padding: 70px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.bienvenida-text{
+  font-size: 30px;
+  color: rgb(0, 0, 82);
+  font-family: "Inter", sans-serif;
+  font-weight: 900;
+
+}
+
+.imagen-w, .imagen-keys, .img-estudiantes{
+  height: 240px;
+  border-radius: 20px;
+}
+
+
+.b-secondary{
+  font-size: 20px;
+  color: rgb(10, 6, 47);
+}
+
+.secondary{
+  padding: 80px 50px;
+  display: flex;
+  justify-content: space-around;
+  gap: 30px;
+  align-items: center;
+  background: linear-gradient(to right,rgb(255, 250, 236),rgb(246, 231, 211),rgb(253, 246, 224))100%;
+}
+
+.section-3{
+  padding: 80px 50px;
+  background-color: rgb(237, 244, 251);
+  display: flex;
+}
+
+.section-3 p {
+  color: rgb(0, 0, 76);
+  text-align: justify;
+  margin: 20px 80px 0px 0px;
+  
+}
+span{
+  color: orange ;
+}
+
+.text-bienvenido{
+  color: rgb(17, 21, 50);
+}
+
+@media (max-width: 980px) {
+  .ventana{
+    min-width: 390px;
+    min-height: 600px;
+  }
+  .secondary{
+    padding: 80px 20px;
+    flex-direction: column;
+
+  }
+  .bienvenida{
+    flex-direction: column;
+  }
+  .section-3{
+    flex-direction: column;
+    gap: 50px;
+  }
+  .v-navegacion{
+    display: none;
+  }
+}
+
+.login{
+  animation: ease-in login-in 1s;
+  position: fixed;
+  background-color: rgb(255, 185, 9);
+  left: 180px;
+  top: 180px;
+  height: 400px;
+  width: 890px;
+  border-radius: 20px;
+}
+
+/* Registrarse */
+
+.registro{
+  animation: ease-in login-in 1s;
+  position: absolute;
+  background-color: rgb(255, 185, 9);
+  left: 180px;
+  top: 120px;
+  height: 850px;
+  width: 890px;
+  border-radius: 20px;
+}
+
+.registrarse{
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.file{
+  color: white;
+  background-color: rgb(255, 170, 0);
+  border-radius: 5px;
+  
+}
+
+.atras{
+  cursor: pointer;
+  position: absolute;
+  left: 20px;
+  top: 20px;
+}
+
+.formulario{
+  background-color: aliceblue;
+  display: flex;
+  flex-direction: column;
+  margin: 30px 200px;
+  border-radius: 20px;
+  padding: 30px;
+  align-items: center;
+}
+.iniciar{
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.formulario p{
+  color: black;
+  
+}
+input{
+  border: none;
+  max-width: 200px;
+  margin-bottom: 10px;
+  padding: 4px;
+  
+}
+
+.submit{
+  background-color: rgb(223, 149, 0);
+  color: white;
+  padding: 10px 60px;
+  margin: 10px 0px 0px 0px;
+}
+
+.alerta{
+  margin: 30px 100px;
+  padding: 150px 200px;
+  position: absolute;
+  background-color: rgb(255, 203, 119);
+  left: 80px;
+  font-size: 30px;
+  border-radius: 40px;
+  animation: ease login-in 0.5s;
+}
+
+.modulos-imagenes{
+  margin: 50px 150px;
+  background-color: antiquewhite;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px;
+  gap: 30px;
+}
+
+.botones{
+  display: flex;
+  gap: 50px ;
+}
+
+.botones button{
+  background-color: rgb(255, 153, 0) ;
+  border: none;
+  padding: 10px 30px;
+  border-radius: 10px;
+  color: white;
+  font-weight: 700;
+}
+
+@keyframes login-in {
+  from{
+    opacity: 0;
+    filter: blur(10px);
+  }to{
+    filter: blur(0px);
+    opacity: 1;
+  }
+}

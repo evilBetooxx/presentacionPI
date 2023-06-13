@@ -1,0 +1,43 @@
+.solucion{
+  animation: ease-in page-transition .6s;
+  display: flex;
+  justify-content: space-around;
+  margin: 50px 130px;
+  gap: 50px;
+  align-items: center;
+}
+
+@media (max-width: 980px) {
+  .solucion{
+    flex-direction: column;
+    margin: 20px 0px;
+  }
+  
+}
+
+.titulo{
+  font-size: 50px;
+  font-weight: 700;
+}
+.parrafo{
+  margin-top: 20px;
+}
+
+li{
+  color: rgba(255, 255, 255, 0.862);
+  font-style: italic;
+}
+
+.imagen{
+  height: 350px;
+  margin: 50px;
+}
+@keyframes page-transition {
+    from{
+      filter: blur(10px);
+      opacity: 0;
+    }to{
+      filter: blur(0px);
+      opacity: 1;
+    }
+}

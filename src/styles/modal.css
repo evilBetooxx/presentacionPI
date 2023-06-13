@@ -1,0 +1,45 @@
+.modal {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: 100%;
+  background-color: rgba(0, 6, 49, 0.933);
+  justify-content: center;
+  align-items: center;
+  animation: ease-in modal-animation .2s;
+}
+.boton{
+  position: absolute;
+  right: 40px;
+  top: 20px;
+  font-size: 23px;
+  margin: 10px;
+} 
+
+.boton:hover{
+  cursor: pointer;
+}
+
+.opcion {
+  text-decoration: none;
+  color: white;
+  padding: 60px;
+  transition: all 1s;
+  width: 100%;
+  font-size: 20px;
+}
+
+.opcion:hover{
+  color: white;
+  background-color: rgb(70, 78, 164);
+}
+
+@keyframes modal-animation {
+  from{
+    opacity: 0;
+  }
+  to{
+    opacity: 1;
+  }
+  
+}

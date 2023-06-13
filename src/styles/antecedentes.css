@@ -1,0 +1,52 @@
+.antecedentes{
+  margin: 50px 130px;
+  display: flex;
+  justify-content: space-around;
+  gap: 50px;
+  animation: ease-in page-transition .5s;
+  align-items: center;
+}
+
+@media (max-width: 980px)
+{
+  .antecedentes{
+    flex-direction: column;
+    margin: 20px 0px;
+  }
+}
+.datos-empresa{
+  background-color: rgba(1, 56, 165, 0.119);
+  padding: 50px;
+  border-radius: 30px;
+}
+
+p{
+  color: white;
+}
+
+.nombre{
+  font-weight: 700;
+  font-size: 50px;
+}
+
+.texto{
+  text-align: justify;
+}
+.duenio{
+  font-weight: 700;
+}
+.imagen{    
+  height: 250px;
+  margin: 50px;
+  filter:invert() ;
+}
+
+@keyframes page-transition {
+    from{
+      filter: blur(10px);
+      opacity: 0;
+    }to{
+      filter: blur(0px);
+      opacity: 1;
+    }
+}

@@ -1,0 +1,22 @@
+.footer{
+  height: 100px;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  filter: blur(40px);
+  transition: all ease 1s;
+  background-color: rgba(0, 37, 60, 0.485);
+  position: absolute;
+  bottom: 0px;
+  opacity: .4;
+}
+
+.integrantes{
+  color: white;
+  margin: 10px;
+}
+.footer:hover{
+  filter: none;
+  opacity: 1;
+}
